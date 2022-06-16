@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Vehicle</title>
+</head>
+
+<body>
+    <div class="form-wrapper">
+        <h1>Search Vehicle</h1>
+        <form class="forms" action="https://fom.in.ua/echo" method="post">
+            <fieldset>
+
+
+
+                <p>Select type:</p>
+                <select name="vehicle-type-selector" id="type-selector">
+                    <option value="suv">SUV</option>
+                    <option value="hatchback">Hatchback</option>
+                    <option value="crossover">Crossover</option>
+                    <option value="convertible">Convertible</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="coupe">Coupe</option>
+                    <option value="minivan">Minivan</option>
+                </select>
+
+
+
+                <p>Select model:</p>
+                <select name="vehicle-model-selector" id="model-selector">
+                    <option value="audi">Audi</option>
+                    <option value="bmw">BMW</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="honda">Honda</option>
+                    <option value="hyundai">Hyundai</option>
+                    <option value="kia">Kia</option>
+                    <option value="lexus">Lexus</option>
+                    <option value="mercedes-benz">Mercedes-Benz</option>
+                    <option value="skoda">Skoda</option>
+                </select>
+
+
+
+                <p>Select country of origin:</p>
+                <select name="vehicle-origin-selector" id="origin-selector">
+                    <option value="jp">Japan</option>
+                    <option value="ge">Germany</option>
+                    <option value="us">United States</option>
+                    <option value="kr">Korea</option>
+                    <option value="cz">Czech Reoublic</option>
+                </select>
+
+
+                <p>Select price:</p>
+                <span>1000 USD</span><input type="range" name="vehicle-price-selector" id="price-selector" min="1000"
+                    max="50000">
+                <span>50,000 USD</span>
+
+
+                <p>Select year of origin:</p>
+                <span>1991</span><input type="range" name="vehicle-year-selector" id="year-selector" min="1991"
+                    max="2022">
+                <span>2022</span>
+
+
+                <br>
+                <br>
+                <label for="condition-selector">Select condition:</label>
+                <label><input type="radio" name="condition-selector-new" id="conditon-new">New</label>
+                <label><input type="radio" name="condition-selector-used" id="conditon-used">Used</label>
+                <label><input type="radio" name="condition-selector-inloan" id="conditon-inloan">In loan</label>
+                <label><input type="radio" name="condition-selector-noinsurance" id="conditon-noinsurance">No
+                    insurance</label>
+
+
+
+                <p>Select fuel type:</p>
+                <select name="vehicle-fuel-selector" id="fuel-selector">
+                    <option value="gas">Gasoline</option>
+                    <option value="die">Diesel</option>
+                    <option value="lpg">LPG</option>
+                    <option value="el">Electricity</option>
+                </select>
+
+
+
+                <p>Select transmission:</p>
+                <select name="vehicle-transmission-selector" id="transmission-selector">
+                    <option value="mex">Mechanical</option>
+                    <option value="auto">Automatic</option>
+                </select>
+
+
+                <p>Select color:</p>
+                <select name="vehicle-color-selector" id="color-selector">
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="magenta">Magenta</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="baidge">Baidge</option>
+                </select>
+
+
+                <br>
+                <br>
+                <label for="additionals-selector">Select additional options:</label>
+                <label><input type="radio" name="additionals-selector-abs" id="additionals-abs">ABS</label>
+                <label><input type="radio" name="additionals-selector-ac" id="additionals-ac">AC</label>
+                <label><input type="radio" name="additionals-selector-xenon" id="additionals-xenon">Xenon lights</label>
+                <label><input type="radio" name="additionals-selector-leather" id="additionals-leather">Leather
+                    seats</label>
+                <label><input type="radio" name="additionals-selector-multimedia" id="additionals-multimedia">Multimedia
+                    system</label>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit options">
+        </form>
+    </div>
+</body>
+
+</html>
